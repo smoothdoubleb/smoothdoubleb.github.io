@@ -1,0 +1,391 @@
+/* the styles for the elements */
+html {
+	background-image: url("../images/BackgroundHomePic.jpg");
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    width: 100%;                             /* fixed width was 900 */
+    max-width: 1280px;                      /* add max-width 1024*/
+    margin: 0 auto;
+    background-color: white;
+    padding: 0;
+    border: 3px solid steelblue;            /* 4 / 16 */
+    box-shadow: 0 .625em 1.25em .625em;     /* 10 / 16; 20 / 16 */
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover, a:focus { 
+    color: maroon;
+}
+
+/* the styles for the header */
+header {
+    background-image: -webkit-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%);    
+    padding: 15px 3.3333%;              /* 30 / 900 * 100 */
+    border-bottom: 2px solid steelblue;                                                     
+} 
+header img { 
+	float: left; 
+    width: 15.5555%;                        /* 140 / 990 * 100 */
+    max-width: 30px;                       /* native size */
+    min-width: 70px;
+} 
+header h2 {
+	font-size: 250%;
+	font-style: italic;
+	color: black;
+	text-indent: 5%;                        /* 45 / 900 *100 */
+	text-shadow: 3px 3px 3px steelblue;
+    margin-bottom: .3em;
+}
+header h3 {
+	font-size: 150%;
+    text-indent: 5%;
+    color: maroon;
+    padding-bottom: .75em;       
+}
+
+/* Style the search box inside the navigation bar */
+header.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    padding-right: 40px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	clear: left;
+    border-bottom: 2px solid steelblue;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                             /* 5 (20) items each 10% of menu */
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: steelblue;
+	color: white;
+}
+#nav_menu ul li a.current {
+	color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: lightsteelblue;
+}
+#nav_menu ul li:hover ul {
+	width: 100%;
+}
+
+/* the styles for the section right margin left 40em width 62.7777%*/
+section {
+    width: 95.7777%;                        /* 565 / 900 X 100 */
+    float: center;
+    padding: 1.5625em 3.3333%;              /* 20 / 16; 30 / 900 x 100 */
+}
+section p {
+    margin-bottom: 1em;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+    font-size: 5em;
+    font: bold;
+    margin-top: 2em;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+    color: goldenrod;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+    color: goldenrod;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    color: black;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;    
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:200px;}
+
+/* the styles for the footer */
+footer { 
+	clear: both;
+	padding: .9375em 3.3333%;               /* 15 / 16; 30 / 900 * 100 */
+    background-color: steelblue;
+} 
+footer p {
+	text-align: center;
+    font-size: 85%;
+    color: white;
+}
+#mobile_menu {
+	display: none;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+/* media queries */
+@media only screen and (max-width: 900px) {
+    html {
+        background-image: none;
+    }
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+    
+    /* change background and decrease padding */
+    .slicknav_menu {
+        background: steelblue !important;
+	    padding: 3px !important;
+    }
+
+    #mobile_menu {
+		display: block;
+	}
+    #mobile_menu ul {
+        background-color: steelblue;
+    }
+    #mobile_menu a {
+        background-color: steelblue;
+    }
+    #mobile_menu a:hover, #mobile_menu a:focus {
+        color: lightsteelblue;
+    }
+	header h2 {
+		font-size: 200%;
+	}
+	section {
+		float: none;
+        width: 93.3334%;
+	}
+	aside {
+		float: none;        
+		width: 93.3334%;
+        padding-top: 0;
+        padding-bottom: 1.5625em;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+    section p {
+	    font-size: 95%;
+    }
+}
